@@ -25,7 +25,7 @@ outfile=open(sys.argv[3],'w+')
 f = open(bedfile,'r')
 TmpChr=""
 for eachline in f:
-   lst=eachline.strip().split(" ")
+   lst=eachline.strip().split("\t")
    Chr=lst[0]
    Start=int(lst[1])
    End=int(lst[2])
